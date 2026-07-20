@@ -1,0 +1,7 @@
+Ticket ID,주요 현상,현재 서비스 상태,반복지속 여부,영향 가능 범위,Ticket 상태,부족한 정보,우선순위,판단 근거
+EDU-TKT-2026-0201,SAMPLE_TOR_SW_03 장비 Gi0/24 인터페이스 링크 플랩 발생 및 일시적 다운,서비스 복구되어 이용 가능 (일시적으로 가상 서버 2대 도달 불가 이력 있음),반복 지속 (링크 업(Link Up) 이후 추가 상태 변경 1회 기록),가상 샘플 서버 2대,Open (STATUS_OPEN),링크 플랩(반복적인 상태 변경)의 구체적인 원인,2,실제 Link Down으로 서버 2대가 일시적으로 연결되지 않았고 Link Up 이후에도 Link Flap이 재발했으며 Ticket이 Open 상태임
+EDU-TKT-2026-0202,SAMPLE_RACK_PDU_05A 장비의 입력 전원 피드 A 전압이 정상 범위를 벗어남,서비스 영향 없음 (이중화 피드 B가 가동 중으로 서비스 중단 없음),지속 중 (전압 경고 유지 및 듀얼 피드 상태 미복구),가상 샘플 서버 6대,Open / Escalated (STATUS_OPEN),전력 장비 추가 설비 컨텍스트(Facilities-context) 분석 내용,1,"Feed A 전압 경고가 지속되고 정상 이중 전원 상태가 복구되지 않았으며 가상 서버 6대에 영향을 줄 가능성이 있고 Ticket이 Open 및 Escalated 상태임
+Feed A 전압 경고가 지속되고 정상 이중 전원 상태가 복구되지 않았으며 가상 서버 6대에 영향을 줄 가능성이 있고 Ticket이 Open 및 Escalated 상태임
+"
+EDU-TKT-2026-0203,EDU_SRV_R02_N08 장비의 SSD Slot 2 예측 실패(Predictive Failure) 경고 발생,서비스 영향 없음 (이중화 스토리지 미러가 활성화되어 서비스 유지됨),지속 중 (교체 조치 완료 전),가상 샘플 서버 1대,Monitoring (STATUS_MONITORING),유지보수 일정 및 부품 교체 타이밍,3,SSD 예측 장애 경고가 지속 중이지만 스토리지 미러가 활성화되어 현재 서비스가 유지되고 있으며 Monitoring 상태임
+EDU-TKT-2026-0204,DEMO_CORE_SW_04 장비의 팬 모듈 1 RPM 저하 경고 발생,서비스 영향 없음 (섀시 온도 정상 유지 및 팬 RPM 정상 회복),해결됨 (팬 RPM이 정상 범위로 복구되어 상황 해결됨),없음 (경고 해제),Resolved (STATUS_RESOLVED),없음,4,Fan RPM이 정상으로 복구되고 장비 온도도 정상이며 Ticket이 Resolved 상태임
